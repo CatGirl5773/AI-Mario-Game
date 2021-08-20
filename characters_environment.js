@@ -53,7 +53,17 @@ var gameConfig={
 =            Game Status             =
 ====================================*/
 
+noseX = "";
+noseY = "";
+GameStatus = "";
+
+function startGame() {
+  GameStatus = "start";
+  document.getElementById("status").innerHTML = "Game is Loading";
+}
+
 function game(){
+  console.log("NoseX = " + noseX + ", noseY = " + noseY);
 
   instializeInDraw();
   moveEnvironment(mario);
